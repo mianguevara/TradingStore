@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "c73a518f-43c9-42ea-ae03-ff4ceac2bb4f",
+		"name": "TRADING",
+		"description": "SIMULATED TRADING OPTIONS (BUY CALL, CLOSE CALL, BUY PUT AND CLOSE PUT)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16973344"
+	},
+	"item": [
+		{
+			"name": "https://7hugdzj2ug.execute-api.us-east-1.amazonaws.com/items?ticker=SPY&timenow=1/20/2023  11:45:20 AM&type_option=CALL&type_operation=OPEN&prime=500&spot_price=370&strike_price=400",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://7hugdzj2ug.execute-api.us-east-1.amazonaws.com/items?ticker=SPY&timenow=1/20/2023  11:45:20 AM&type_option=CALL&type_operation=OPEN&prime=500&spot_price=370&strike_price=400",
+					"protocol": "https",
+					"host": [
+						"7hugdzj2ug",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"items"
+					],
+					"query": [
+						{
+							"key": "ticker",
+							"value": "SPY"
+						},
+						{
+							"key": "timenow",
+							"value": "1/20/2023  11:45:20 AM"
+						},
+						{
+							"key": "type_option",
+							"value": "CALL"
+						},
+						{
+							"key": "type_operation",
+							"value": "OPEN"
+						},
+						{
+							"key": "prime",
+							"value": "500"
+						},
+						{
+							"key": "spot_price",
+							"value": "370"
+						},
+						{
+							"key": "strike_price",
+							"value": "400"
+						}
+					]
+				},
+				"description": "INSERT OPERATIONS"
+			},
+			"response": []
+		},
+		{
+			"name": "https://7hugdzj2ug.execute-api.us-east-1.amazonaws.com/items?id=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://7hugdzj2ug.execute-api.us-east-1.amazonaws.com/items?id=1",
+					"protocol": "https",
+					"host": [
+						"7hugdzj2ug",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"items"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				},
+				"description": "GET OPERATIONS BY ID"
+			},
+			"response": []
+		},
+		{
+			"name": "https://7hugdzj2ug.execute-api.us-east-1.amazonaws.com/balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://7hugdzj2ug.execute-api.us-east-1.amazonaws.com/balance",
+					"protocol": "https",
+					"host": [
+						"7hugdzj2ug",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"balance"
+					]
+				},
+				"description": "GET BALANCE"
+			},
+			"response": []
+		}
+	]
+}
