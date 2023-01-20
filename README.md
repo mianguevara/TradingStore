@@ -1,4 +1,4 @@
-**Step 1: Create a DynamoDB table**
+##Step 1: Create a DynamoDB table**
 
 You use a [DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html) table to store data for your API.
 
